@@ -10,7 +10,9 @@ import UIKit
 
 class SchoolsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var NameSchoolLabel: UILabel!
     
+    @IBOutlet weak var DescriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

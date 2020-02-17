@@ -10,13 +10,13 @@
 		B50CD8CE3E32BB882760EE4F /* Pods_MiEscuela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41E8A70EB55E76D657342BE /* Pods_MiEscuela.framework */; };
 		D4704ABB23F8B9B8001F337B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ABA23F8B9B8001F337B /* AppDelegate.swift */; };
 		D4704ABD23F8B9B8001F337B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ABC23F8B9B8001F337B /* SceneDelegate.swift */; };
-		D4704ABF23F8B9B8001F337B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ABE23F8B9B8001F337B /* ViewController.swift */; };
 		D4704AC223F8B9B8001F337B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4704AC023F8B9B8001F337B /* Main.storyboard */; };
 		D4704AC423F8B9BD001F337B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4704AC323F8B9BD001F337B /* Assets.xcassets */; };
 		D4704AC723F8B9BD001F337B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4704AC523F8B9BD001F337B /* LaunchScreen.storyboard */; };
 		D4704ACF23F8BA6C001F337B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4704ACE23F8BA6C001F337B /* GoogleService-Info.plist */; };
 		D4704AD523FA0A2A001F337B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704AD423FA0A2A001F337B /* School.swift */; };
 		D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */; };
+		D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ADB23FA19AE001F337B /* SchoolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,6 @@
 		D4704AB723F8B9B8001F337B /* MiEscuela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiEscuela.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4704ABA23F8B9B8001F337B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4704ABC23F8B9B8001F337B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4704ABE23F8B9B8001F337B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4704AC123F8B9B8001F337B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4704AC323F8B9BD001F337B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4704AC623F8B9BD001F337B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		D4704ACE23F8BA6C001F337B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4704AD423FA0A2A001F337B /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewCell.swift; sourceTree = "<group>"; };
+		D4704ADB23FA19AE001F337B /* SchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +78,13 @@
 		D4704AB923F8B9B8001F337B /* MiEscuela */ = {
 			isa = PBXGroup;
 			children = (
+				D4704AD823FA1618001F337B /* TableViews */,
 				D4704AD323FA0993001F337B /* Models */,
 				D4704AD223FA096D001F337B /* Utilities */,
 				D4704AD123FA0965001F337B /* Views */,
 				D4704AD023FA0958001F337B /* Cells */,
 				D4704ABA23F8B9B8001F337B /* AppDelegate.swift */,
 				D4704ABC23F8B9B8001F337B /* SceneDelegate.swift */,
-				D4704ABE23F8B9B8001F337B /* ViewController.swift */,
 				D4704AC023F8B9B8001F337B /* Main.storyboard */,
 				D4704AC323F8B9BD001F337B /* Assets.xcassets */,
 				D4704AC523F8B9BD001F337B /* LaunchScreen.storyboard */,
@@ -105,6 +105,7 @@
 		D4704AD123FA0965001F337B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D4704ADB23FA19AE001F337B /* SchoolViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +123,13 @@
 				D4704AD423FA0A2A001F337B /* School.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D4704AD823FA1618001F337B /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 		ECC3779A147169A00EAD6FD5 /* Frameworks */ = {
@@ -144,6 +152,7 @@
 				D4704AB423F8B9B8001F337B /* Frameworks */,
 				D4704AB523F8B9B8001F337B /* Resources */,
 				82990830BB505917A9CE57CD /* [CP] Embed Pods Frameworks */,
+				210DE551F174E34A45FD9481 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +211,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		210DE551F174E34A45FD9481 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiEscuela/Pods-MiEscuela-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiEscuela/Pods-MiEscuela-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiEscuela/Pods-MiEscuela-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		81D5E0A26031212776E8F49E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4704ABF23F8B9B8001F337B /* ViewController.swift in Sources */,
 				D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */,
+				D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */,
 				D4704ABB23F8B9B8001F337B /* AppDelegate.swift in Sources */,
 				D4704ABD23F8B9B8001F337B /* SceneDelegate.swift in Sources */,
 				D4704AD523FA0A2A001F337B /* School.swift in Sources */,

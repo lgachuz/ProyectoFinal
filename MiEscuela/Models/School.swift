@@ -9,8 +9,10 @@
 import Foundation
 
 struct School {
+    var id : String
     var name : String
     var description : String
     var ad_client_id : String
     var acuerdoSEP : String
+    
 }
