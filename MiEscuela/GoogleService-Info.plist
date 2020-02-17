@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1012616432936-vq97hm68qbdgqoqiu56or7k23pnpq5ad.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1012616432936-vq97hm68qbdgqoqiu56or7k23pnpq5ad</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGO0GuFaXEtk3VTqnQK8iLxOpOvdXCr80</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1012616432936</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>LuisGachuzMorales.MiEscuela</string>
+	<key>PROJECT_ID</key>
+	<string>proyectomiescuela-9cab7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>proyectomiescuela-9cab7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1012616432936:ios:329152b0322d94baf3541d</string>
+	<key>DATABASE_URL</key>
+	<string>https://proyectomiescuela-9cab7.firebaseio.com</string>
+</dict>
+</plist>
