@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n6m-Z8-14P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,47 +16,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu Colegio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-2L-MGk">
-                                <rect key="frame" x="5" y="101" width="375" height="24"/>
+                                <rect key="frame" x="5" y="5" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1P0-aI-Hlc">
-                                <rect key="frame" x="5" y="140" width="365" height="514"/>
+                                <rect key="frame" x="5" y="44" width="365" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellSchool" rowHeight="78" id="HOM-T5-Yvd" customClass="SchoolsTableViewCell" customModule="MiEscuela" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="365" height="78"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CellSchool" translatesAutoresizingMaskIntoConstraints="NO" id="HOM-T5-Yvd" customClass="SchoolsTableViewCell" customModule="MiEscuela" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="365" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HOM-T5-Yvd" id="hbS-IT-9Of">
-                                            <rect key="frame" x="0.0" y="0.0" width="365" height="78"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombreEscuela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-yY-aN5">
-                                                    <rect key="frame" x="5" y="5" width="355" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NombreEscuela" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-yY-aN5">
+                                                    <rect key="frame" x="1" y="1" width="363" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ye-KZ-asR">
-                                                    <rect key="frame" x="5" y="31" width="355" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ye-KZ-asR">
+                                                    <rect key="frame" x="1" y="27" width="363" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="SlL-yY-aN5" secondAttribute="trailing" constant="5" id="2lB-B1-SDC"/>
-                                                <constraint firstItem="SlL-yY-aN5" firstAttribute="leading" secondItem="hbS-IT-9Of" secondAttribute="leading" constant="5" id="NkD-dD-IUl"/>
-                                                <constraint firstItem="2Ye-KZ-asR" firstAttribute="top" secondItem="SlL-yY-aN5" secondAttribute="bottom" constant="5" id="P2h-XZ-igI"/>
-                                                <constraint firstItem="2Ye-KZ-asR" firstAttribute="leading" secondItem="hbS-IT-9Of" secondAttribute="leading" constant="5" id="W2y-j6-AWM"/>
-                                                <constraint firstItem="SlL-yY-aN5" firstAttribute="top" secondItem="hbS-IT-9Of" secondAttribute="top" constant="5" id="agL-Le-vFf"/>
-                                                <constraint firstAttribute="trailing" secondItem="2Ye-KZ-asR" secondAttribute="trailing" constant="5" id="wiD-aK-GFh"/>
+                                                <constraint firstAttribute="bottom" secondItem="2Ye-KZ-asR" secondAttribute="bottom" constant="5" id="9tV-dN-I7a"/>
+                                                <constraint firstItem="SlL-yY-aN5" firstAttribute="leading" secondItem="hbS-IT-9Of" secondAttribute="leading" constant="1" id="9zO-7N-MHd"/>
+                                                <constraint firstItem="2Ye-KZ-asR" firstAttribute="top" secondItem="SlL-yY-aN5" secondAttribute="bottom" constant="5" id="Cat-iG-EI3"/>
+                                                <constraint firstItem="2Ye-KZ-asR" firstAttribute="leading" secondItem="hbS-IT-9Of" secondAttribute="leading" constant="1" id="KjG-Wh-O7P"/>
+                                                <constraint firstAttribute="trailing" secondItem="SlL-yY-aN5" secondAttribute="trailing" constant="1" id="PDL-Gz-8XV"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Ye-KZ-asR" secondAttribute="trailing" constant="1" id="TUM-rj-ui4"/>
+                                                <constraint firstItem="SlL-yY-aN5" firstAttribute="top" secondItem="hbS-IT-9Of" secondAttribute="top" constant="1" id="Z85-66-AcJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="DescriptionLabel" destination="2Ye-KZ-asR" id="BM6-yC-xql"/>
                                             <outlet property="NameSchoolLabel" destination="SlL-yY-aN5" id="MGd-75-EsN"/>
+                                            <segue destination="9yS-i4-qCR" kind="presentation" identifier="SchoolHomeSegue" modalPresentationStyle="fullScreen" id="o1N-lz-a1z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -67,13 +69,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RWc-2L-MGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="1xj-pN-Pic"/>
-                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOb-O6-Ok7"/>
-                            <constraint firstItem="RWc-2L-MGk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="IZT-2J-pHz"/>
-                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="leading" secondItem="RWc-2L-MGk" secondAttribute="leading" id="bTe-qU-aX2"/>
-                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="top" secondItem="RWc-2L-MGk" secondAttribute="bottom" constant="15" id="l9h-QW-OOe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1P0-aI-Hlc" secondAttribute="bottom" constant="13" id="rI6-IT-moZ"/>
-                            <constraint firstItem="RWc-2L-MGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="sON-wI-qX9"/>
+                            <constraint firstAttribute="trailing" secondItem="RWc-2L-MGk" secondAttribute="trailing" constant="-5" id="3lD-ey-MRa"/>
+                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HFa-yI-iFU"/>
+                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ONw-PE-b6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1P0-aI-Hlc" secondAttribute="bottom" constant="5" id="Qpb-Wv-gSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1P0-aI-Hlc" secondAttribute="trailing" constant="5" id="a1w-fM-IPW"/>
+                            <constraint firstItem="RWc-2L-MGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="b91-O8-ZZg"/>
+                            <constraint firstItem="RWc-2L-MGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="gJ8-Ah-PbS"/>
+                            <constraint firstItem="1P0-aI-Hlc" firstAttribute="top" secondItem="RWc-2L-MGk" secondAttribute="bottom" constant="15" id="jp3-xI-AP2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,23 +89,37 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="105.69715142428787"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4DR-Ue-eIJ">
+        <!--School Home View Controller-->
+        <scene sceneID="SKd-K4-3PB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n6m-Z8-14P" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="1ZE-Vs-V0H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController storyboardIdentifier="SchoolHomeViewController" id="9yS-i4-qCR" customClass="SchoolHomeViewController" customModule="MiEscuela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kYN-JY-vRz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colegio Patito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofb-XS-RO9">
+                                <rect key="frame" x="5" y="5" width="365" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ofb-XS-RO9" firstAttribute="top" secondItem="RoF-qX-1pI" secondAttribute="top" constant="5" id="9v8-fB-pda"/>
+                            <constraint firstItem="RoF-qX-1pI" firstAttribute="trailing" secondItem="ofb-XS-RO9" secondAttribute="trailing" constant="5" id="fIM-gl-aJU"/>
+                            <constraint firstItem="ofb-XS-RO9" firstAttribute="leading" secondItem="RoF-qX-1pI" secondAttribute="leading" constant="5" id="lus-sz-UHe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RoF-qX-1pI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TF3-IO-vzb"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9JW-N7-ZkL"/>
+                        <outlet property="NameSchoolLabel" destination="ofb-XS-RO9" id="ROS-nn-ytF"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W7w-re-LJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1DG-Hs-cgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="105.69715142428787"/>
+            <point key="canvasLocation" x="1999.2" y="105.69715142428787"/>
         </scene>
     </scenes>
 </document>

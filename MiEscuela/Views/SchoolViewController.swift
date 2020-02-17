@@ -20,10 +20,15 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
     var getRef: Firestore!
     var storageReference: StorageReference!
     
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
+        isLogged()
+    }
+    
     @IBOutlet weak var SchoolTableView: UITableView!
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         getRef = Firestore.firestore()
         storageReference = Storage.storage().reference()
         SchoolTableView.delegate = self
@@ -32,7 +37,6 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
         getSchools()
         
 
-        // Do any additional setup after loading the view.
     }
     
     
@@ -43,14 +47,32 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
         return schools.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSchool", for: indexPath) as! SchoolsTableViewCell
         
         cell.NameSchoolLabel.text = self.schools[indexPath.row].name //"Hola Soy el Nombre"
         cell.DescriptionLabel.text = self.schools[indexPath.row].description //"Hola soy la descripcion"
+        
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserDefaults.standard.set(self.schools[indexPath.row].id,forKey: "IDSchool")
+        //UserDefaults.standard.synchronize()
+        
+        UserDefaults.standard.set(self.schools[indexPath.row].name,forKey: "NameSchool")
+        UserDefaults.standard.synchronize()
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // se ejecuta antes de cambiar de vista
+      //  if segue.identifier == "editView" {}
+    }
+    
     
     
     func getSchools(){
@@ -81,11 +103,19 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
 
     }
     
+      func isLogged(){
+            
+            if UserDefaults.standard.string(forKey: "IDSchool") != nil{
+                
+                self.performSegue(withIdentifier: "SchoolHomeSegue", sender: nil)
+                
+               
+            }
+            else {
+                print("No tuvo ID")
+        }
+        
 
+    }
+    
 }
-
-
-    
-    
-
-

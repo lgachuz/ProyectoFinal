@@ -17,6 +17,8 @@
 		D4704AD523FA0A2A001F337B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704AD423FA0A2A001F337B /* School.swift */; };
 		D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */; };
 		D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ADB23FA19AE001F337B /* SchoolViewController.swift */; };
+		D4704AE023FA5529001F337B /* FunctionsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704ADF23FA5529001F337B /* FunctionsUtils.swift */; };
+		D4704AE223FA689B001F337B /* SchoolHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4704AE123FA689B001F337B /* SchoolHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D4704AD423FA0A2A001F337B /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewCell.swift; sourceTree = "<group>"; };
 		D4704ADB23FA19AE001F337B /* SchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		D4704ADF23FA5529001F337B /* FunctionsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsUtils.swift; sourceTree = "<group>"; };
+		D4704AE123FA689B001F337B /* SchoolHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D4704ADB23FA19AE001F337B /* SchoolViewController.swift */,
+				D4704AE123FA689B001F337B /* SchoolHomeViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		D4704AD223FA096D001F337B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D4704ADF23FA5529001F337B /* FunctionsUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */,
+				D4704AE023FA5529001F337B /* FunctionsUtils.swift in Sources */,
 				D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */,
 				D4704ABB23F8B9B8001F337B /* AppDelegate.swift in Sources */,
+				D4704AE223FA689B001F337B /* SchoolHomeViewController.swift in Sources */,
 				D4704ABD23F8B9B8001F337B /* SceneDelegate.swift in Sources */,
 				D4704AD523FA0A2A001F337B /* School.swift in Sources */,
 			);
