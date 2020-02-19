@@ -108,8 +108,6 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
             if UserDefaults.standard.string(forKey: "IDSchool") != nil{
                 
                 self.performSegue(withIdentifier: "SchoolHomeSegue", sender: nil)
-                
-               
             }
             else {
                 print("No tuvo ID")
