@@ -7,24 +7,74 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+import MobileCoreServices
+import FirebaseStorage
+import FirebaseUI
 
 class AddPostHomeViewController: UIViewController {
-
+    var ref: DocumentReference!
+    var getRef: Firestore!
+    var storageReference: StorageReference!
+    
+    var ad_school_id = UserDefaults.standard.string(forKey: "IDSchool")!
+    
+    var image_url = ""
+    
+    var fecha = getCurrenDateString()
+    
+    
+    @IBOutlet weak var titleLabel: UITextField!
+    @IBOutlet weak var messageLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getRef = Firestore.firestore()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+view.addGestureRecognizer(tap)
+        
+       //
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
-    */
+    
+    
+    @IBAction func actionPost(_ sender: Any) {
+        postNoticeSchool(ad_school_id: self.ad_school_id, fecha: self.fecha, image_url: self.image_url, largetext: self.messageLabel.text ?? "", name: self.titleLabel.text ?? "" )
+    }
+    
+    func postNoticeSchool(ad_school_id: String , fecha : String , image_url :String , largetext : String, name : String){
+        
+        let data:[String: Any] = ["ad_school_id":ad_school_id,
+                                      "fecha":fecha,
+                                      "image_url":image_url,
+                                      "largetext":largetext,
+                                      "name":name]
+            
+            
+            
+                ref = getRef.collection("notice_school").addDocument(data: data ,completion: { (error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                    
+                }else{
+                    print("Se guaradaron los datos")
+                    //
+                }
+                
+                
+            })
+            
+    //        uploadImage(imageData: optimizedImage)
+            self.dismiss(animated: true, completion: nil)
+        }
 
+    @IBAction func cancelar(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -10,9 +10,19 @@ import UIKit
 
 class ShowHomeViewController: UIViewController {
 
+    @IBOutlet weak var NavBar: UINavigationBar!
+    @IBOutlet weak var TitleLabel: UILabel!
+    
+    @IBOutlet weak var textoLabel: UILabel!
+    
+    var dataNoticeSchools: NoticeSchool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        TitleLabel.text = dataNoticeSchools.name
+        textoLabel.text = dataNoticeSchools.largetext
+        NavBar.topItem?.title = UserDefaults.standard.string(forKey: "NameSchool")
         // Do any additional setup after loading the view.
     }
     
@@ -27,4 +37,7 @@ class ShowHomeViewController: UIViewController {
     }
     */
 
+    @IBAction func Return(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

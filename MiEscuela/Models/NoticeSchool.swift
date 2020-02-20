@@ -15,5 +15,5 @@ struct NoticeSchool {
     var fecha : String
     var image_url : String
     var largetext : String
-    
+    var ad_school_id : String
 }
