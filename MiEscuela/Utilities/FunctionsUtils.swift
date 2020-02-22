@@ -44,3 +44,15 @@ func getCurrenDateString() -> String {
     return dateString
     
 }
+
+func getSchoolID() -> String {
+    let ad_school_id = UserDefaults.standard.string(forKey: "IDSchool") ?? ""
+    return ad_school_id
+}
+
+func getNameSchool() -> String {
+    
+    let nameSchool = UserDefaults.standard.string(forKey: "NameSchool") ?? ""
+    return nameSchool
+}
+

@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B50CD8CE3E32BB882760EE4F /* Pods_MiEscuela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41E8A70EB55E76D657342BE /* Pods_MiEscuela.framework */; };
+		CF9111FC2401914A006E8A93 /* AccountSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9111FB2401914A006E8A93 /* AccountSchoolViewController.swift */; };
+		CF9111FE240197FF006E8A93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9111FD240197FF006E8A93 /* LoginViewController.swift */; };
+		CF91120024019814006E8A93 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9111FF24019814006E8A93 /* SignUpViewController.swift */; };
+		CF91120224019828006E8A93 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120124019828006E8A93 /* UserInfoViewController.swift */; };
 		D444A1E723FE3A25009EF417 /* ShowHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1E623FE3A25009EF417 /* ShowHomeViewController.swift */; };
+		D444A1E923FF9546009EF417 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1E823FF9546009EF417 /* InfoViewController.swift */; };
+		D444A1EB23FF9A32009EF417 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1EA23FF9A32009EF417 /* InfoTableViewCell.swift */; };
+		D444A1ED24008BDA009EF417 /* InfoSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1EC24008BDA009EF417 /* InfoSchool.swift */; };
+		D444A1EF240092C4009EF417 /* AddInfoSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1EE240092C4009EF417 /* AddInfoSchoolViewController.swift */; };
 		D44A1E0823FBA59C00DF90BE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A1E0723FBA59C00DF90BE /* HomeTableViewCell.swift */; };
 		D44A1E0A23FD02E100DF90BE /* NoticeSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A1E0923FD02E100DF90BE /* NoticeSchool.swift */; };
 		D44A1E0C23FD2C0400DF90BE /* AddPostHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A1E0B23FD2C0400DF90BE /* AddPostHomeViewController.swift */; };
@@ -28,8 +36,16 @@
 /* Begin PBXFileReference section */
 		497493DA5E3D0C3E6E0EBE4F /* Pods-MiEscuela.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiEscuela.debug.xcconfig"; path = "Target Support Files/Pods-MiEscuela/Pods-MiEscuela.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CA9F2A7E382073E02ED2B1 /* Pods-MiEscuela.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiEscuela.release.xcconfig"; path = "Target Support Files/Pods-MiEscuela/Pods-MiEscuela.release.xcconfig"; sourceTree = "<group>"; };
+		CF9111FB2401914A006E8A93 /* AccountSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSchoolViewController.swift; sourceTree = "<group>"; };
+		CF9111FD240197FF006E8A93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF9111FF24019814006E8A93 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CF91120124019828006E8A93 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		D41E8A70EB55E76D657342BE /* Pods_MiEscuela.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiEscuela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D444A1E623FE3A25009EF417 /* ShowHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHomeViewController.swift; sourceTree = "<group>"; };
+		D444A1E823FF9546009EF417 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D444A1EA23FF9A32009EF417 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		D444A1EC24008BDA009EF417 /* InfoSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSchool.swift; sourceTree = "<group>"; };
+		D444A1EE240092C4009EF417 /* AddInfoSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoSchoolViewController.swift; sourceTree = "<group>"; };
 		D44A1E0723FBA59C00DF90BE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D44A1E0923FD02E100DF90BE /* NoticeSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeSchool.swift; sourceTree = "<group>"; };
 		D44A1E0B23FD2C0400DF90BE /* AddPostHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostHomeViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +127,7 @@
 			children = (
 				D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */,
 				D44A1E0723FBA59C00DF90BE /* HomeTableViewCell.swift */,
+				D444A1EA23FF9A32009EF417 /* InfoTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -122,6 +139,12 @@
 				D4704AE123FA689B001F337B /* SchoolHomeViewController.swift */,
 				D44A1E0B23FD2C0400DF90BE /* AddPostHomeViewController.swift */,
 				D444A1E623FE3A25009EF417 /* ShowHomeViewController.swift */,
+				D444A1E823FF9546009EF417 /* InfoViewController.swift */,
+				D444A1EE240092C4009EF417 /* AddInfoSchoolViewController.swift */,
+				CF9111FB2401914A006E8A93 /* AccountSchoolViewController.swift */,
+				CF9111FD240197FF006E8A93 /* LoginViewController.swift */,
+				CF9111FF24019814006E8A93 /* SignUpViewController.swift */,
+				CF91120124019828006E8A93 /* UserInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +162,7 @@
 			children = (
 				D4704AD423FA0A2A001F337B /* School.swift */,
 				D44A1E0923FD02E100DF90BE /* NoticeSchool.swift */,
+				D444A1EC24008BDA009EF417 /* InfoSchool.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,17 +316,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D444A1EB23FF9A32009EF417 /* InfoTableViewCell.swift in Sources */,
+				D444A1ED24008BDA009EF417 /* InfoSchool.swift in Sources */,
 				D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */,
 				D444A1E723FE3A25009EF417 /* ShowHomeViewController.swift in Sources */,
 				D44A1E0A23FD02E100DF90BE /* NoticeSchool.swift in Sources */,
 				D4704AE023FA5529001F337B /* FunctionsUtils.swift in Sources */,
+				CF91120024019814006E8A93 /* SignUpViewController.swift in Sources */,
 				D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */,
 				D4704ABB23F8B9B8001F337B /* AppDelegate.swift in Sources */,
 				D44A1E0C23FD2C0400DF90BE /* AddPostHomeViewController.swift in Sources */,
 				D4704AE223FA689B001F337B /* SchoolHomeViewController.swift in Sources */,
 				D4704ABD23F8B9B8001F337B /* SceneDelegate.swift in Sources */,
 				D44A1E0823FBA59C00DF90BE /* HomeTableViewCell.swift in Sources */,
+				CF9111FC2401914A006E8A93 /* AccountSchoolViewController.swift in Sources */,
+				CF9111FE240197FF006E8A93 /* LoginViewController.swift in Sources */,
+				D444A1EF240092C4009EF417 /* AddInfoSchoolViewController.swift in Sources */,
+				D444A1E923FF9546009EF417 /* InfoViewController.swift in Sources */,
 				D4704AD523FA0A2A001F337B /* School.swift in Sources */,
+				CF91120224019828006E8A93 /* UserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

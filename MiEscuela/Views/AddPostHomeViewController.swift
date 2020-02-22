@@ -13,7 +13,7 @@ import MobileCoreServices
 import FirebaseStorage
 import FirebaseUI
 
-class AddPostHomeViewController: UIViewController {
+class AddPostHomeViewController: UIViewController ,UITextViewDelegate{
     var ref: DocumentReference!
     var getRef: Firestore!
     var storageReference: StorageReference!
@@ -25,14 +25,20 @@ class AddPostHomeViewController: UIViewController {
     var fecha = getCurrenDateString()
     
     
+    @IBOutlet weak var messageText: UITextView!
     @IBOutlet weak var titleLabel: UITextField!
-    @IBOutlet weak var messageLabel: UITextField!
+    
+    @IBOutlet weak var PhotoImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getRef = Firestore.firestore()
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-view.addGestureRecognizer(tap)
+      //  let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//view.addGestureRecognizer(tap)
+        
+        self.messageText.delegate = self
+        self.messageText.layer.borderWidth = 1.0
         
        //
         
@@ -44,8 +50,12 @@ view.addGestureRecognizer(tap)
     }
     
     
+    @IBAction func selectPhotoButton(_ sender: UIButton) {
+        print("Seleccionando foto")
+    }
+    
     @IBAction func actionPost(_ sender: Any) {
-        postNoticeSchool(ad_school_id: self.ad_school_id, fecha: self.fecha, image_url: self.image_url, largetext: self.messageLabel.text ?? "", name: self.titleLabel.text ?? "" )
+        postNoticeSchool(ad_school_id: self.ad_school_id, fecha: self.fecha, image_url: self.image_url, largetext: self.messageText.text ?? "", name: self.titleLabel.text ?? "" )
     }
     
     func postNoticeSchool(ad_school_id: String , fecha : String , image_url :String , largetext : String, name : String){
