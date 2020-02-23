@@ -66,6 +66,8 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
         UserDefaults.standard.set(self.schools[indexPath.row].name,forKey: "NameSchool")
         UserDefaults.standard.synchronize()
         
+        UserDefaults.standard.set(self.schools[indexPath.row].password,forKey: "PasswordSchool")
+        
     }
     
     
@@ -91,8 +93,9 @@ class SchoolViewController: UIViewController,UITableViewDataSource,UITableViewDe
                     let ad_client_id = values["ad_client_id"] as? String ?? "Sin ad_client_id" // se castea con el nombre dado en Firebase
                     
                     let acuerdoSep = values["AcuerdoSEP"] as? String ?? "Sin Acuerdo SEP" // se castea con el nombre dado en Firebase
+                    let passwordSchool = values["password"] as? String ?? "Sin Acuerdo SEP"
                     
-                    let school = School(id: id, name: name, description: description, ad_client_id: ad_client_id, acuerdoSEP: acuerdoSep)
+                    let school = School(id: id, name: name, description: description, ad_client_id: ad_client_id, acuerdoSEP: acuerdoSep,password: passwordSchool)
                     self.schools.append(school)
                     
                 }

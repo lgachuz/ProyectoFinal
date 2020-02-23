@@ -56,3 +56,26 @@ func getNameSchool() -> String {
     return nameSchool
 }
 
+func validatePasswordSchool(password : String) -> Bool {
+    let passwordShool = UserDefaults.standard.string(forKey: "PasswordSchool") ?? ""
+    
+    guard passwordShool == passwordShool else {
+        return false
+    }
+    return true
+}
+
+func validateEmail(email : String) -> Bool {
+    let pattern: String
+    pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+    return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: email)
+
+}
+
+func getUserID() -> String {
+    let ad_user_id = UserDefaults.standard.string(forKey: "ad_user_id") ?? ""
+    return ad_user_id
+}
+
+
+

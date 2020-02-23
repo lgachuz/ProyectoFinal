@@ -106,6 +106,8 @@ class SchoolHomeViewController: UIViewController,UITableViewDataSource,UITableVi
     } // termina funcion
     
     
-
+    @IBAction func unwindHomesegue(_ sender: UIStoryboardSegue){
+        
+    }
     
 }

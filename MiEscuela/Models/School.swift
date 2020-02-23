@@ -14,5 +14,6 @@ struct School {
     var description : String
     var ad_client_id : String
     var acuerdoSEP : String
+    var password : String
     
 }

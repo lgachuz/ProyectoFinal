@@ -12,6 +12,12 @@
 		CF9111FE240197FF006E8A93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9111FD240197FF006E8A93 /* LoginViewController.swift */; };
 		CF91120024019814006E8A93 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9111FF24019814006E8A93 /* SignUpViewController.swift */; };
 		CF91120224019828006E8A93 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120124019828006E8A93 /* UserInfoViewController.swift */; };
+		CF91120424020545006E8A93 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120324020545006E8A93 /* User.swift */; };
+		CF9112062402D763006E8A93 /* StudentsbyUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9112052402D762006E8A93 /* StudentsbyUserViewController.swift */; };
+		CF91120A2402DFDB006E8A93 /* UserStudentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9112092402DFDB006E8A93 /* UserStudentsTableViewCell.swift */; };
+		CF91120C2402EE0F006E8A93 /* UserStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120B2402EE0F006E8A93 /* UserStudent.swift */; };
+		CF91120E2403242F006E8A93 /* DetailStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120D2403242F006E8A93 /* DetailStudentsViewController.swift */; };
+		CF91121024032EA2006E8A93 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91120F24032EA2006E8A93 /* Student.swift */; };
 		D444A1E723FE3A25009EF417 /* ShowHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1E623FE3A25009EF417 /* ShowHomeViewController.swift */; };
 		D444A1E923FF9546009EF417 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1E823FF9546009EF417 /* InfoViewController.swift */; };
 		D444A1EB23FF9A32009EF417 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444A1EA23FF9A32009EF417 /* InfoTableViewCell.swift */; };
@@ -40,6 +46,12 @@
 		CF9111FD240197FF006E8A93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF9111FF24019814006E8A93 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CF91120124019828006E8A93 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		CF91120324020545006E8A93 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF9112052402D762006E8A93 /* StudentsbyUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsbyUserViewController.swift; sourceTree = "<group>"; };
+		CF9112092402DFDB006E8A93 /* UserStudentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStudentsTableViewCell.swift; sourceTree = "<group>"; };
+		CF91120B2402EE0F006E8A93 /* UserStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStudent.swift; sourceTree = "<group>"; };
+		CF91120D2403242F006E8A93 /* DetailStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStudentsViewController.swift; sourceTree = "<group>"; };
+		CF91120F24032EA2006E8A93 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		D41E8A70EB55E76D657342BE /* Pods_MiEscuela.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiEscuela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D444A1E623FE3A25009EF417 /* ShowHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHomeViewController.swift; sourceTree = "<group>"; };
 		D444A1E823FF9546009EF417 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 				D4704AD623FA0AF0001F337B /* SchoolsTableViewCell.swift */,
 				D44A1E0723FBA59C00DF90BE /* HomeTableViewCell.swift */,
 				D444A1EA23FF9A32009EF417 /* InfoTableViewCell.swift */,
+				CF9112092402DFDB006E8A93 /* UserStudentsTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -145,6 +158,8 @@
 				CF9111FD240197FF006E8A93 /* LoginViewController.swift */,
 				CF9111FF24019814006E8A93 /* SignUpViewController.swift */,
 				CF91120124019828006E8A93 /* UserInfoViewController.swift */,
+				CF9112052402D762006E8A93 /* StudentsbyUserViewController.swift */,
+				CF91120D2403242F006E8A93 /* DetailStudentsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +178,9 @@
 				D4704AD423FA0A2A001F337B /* School.swift */,
 				D44A1E0923FD02E100DF90BE /* NoticeSchool.swift */,
 				D444A1EC24008BDA009EF417 /* InfoSchool.swift */,
+				CF91120324020545006E8A93 /* User.swift */,
+				CF91120B2402EE0F006E8A93 /* UserStudent.swift */,
+				CF91120F24032EA2006E8A93 /* Student.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,13 +339,17 @@
 				D4704AD723FA0AF0001F337B /* SchoolsTableViewCell.swift in Sources */,
 				D444A1E723FE3A25009EF417 /* ShowHomeViewController.swift in Sources */,
 				D44A1E0A23FD02E100DF90BE /* NoticeSchool.swift in Sources */,
+				CF91120E2403242F006E8A93 /* DetailStudentsViewController.swift in Sources */,
+				CF9112062402D763006E8A93 /* StudentsbyUserViewController.swift in Sources */,
 				D4704AE023FA5529001F337B /* FunctionsUtils.swift in Sources */,
 				CF91120024019814006E8A93 /* SignUpViewController.swift in Sources */,
 				D4704ADC23FA19AF001F337B /* SchoolViewController.swift in Sources */,
+				CF91120424020545006E8A93 /* User.swift in Sources */,
 				D4704ABB23F8B9B8001F337B /* AppDelegate.swift in Sources */,
 				D44A1E0C23FD2C0400DF90BE /* AddPostHomeViewController.swift in Sources */,
 				D4704AE223FA689B001F337B /* SchoolHomeViewController.swift in Sources */,
 				D4704ABD23F8B9B8001F337B /* SceneDelegate.swift in Sources */,
+				CF91120A2402DFDB006E8A93 /* UserStudentsTableViewCell.swift in Sources */,
 				D44A1E0823FBA59C00DF90BE /* HomeTableViewCell.swift in Sources */,
 				CF9111FC2401914A006E8A93 /* AccountSchoolViewController.swift in Sources */,
 				CF9111FE240197FF006E8A93 /* LoginViewController.swift in Sources */,
@@ -335,6 +357,8 @@
 				D444A1E923FF9546009EF417 /* InfoViewController.swift in Sources */,
 				D4704AD523FA0A2A001F337B /* School.swift in Sources */,
 				CF91120224019828006E8A93 /* UserInfoViewController.swift in Sources */,
+				CF91121024032EA2006E8A93 /* Student.swift in Sources */,
+				CF91120C2402EE0F006E8A93 /* UserStudent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
